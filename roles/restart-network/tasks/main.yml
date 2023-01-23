@@ -1,0 +1,9 @@
+#Restarts the network service on target server.
+---
+  - name: restart network service
+    command: service network restart 
+    async: 10
+    poll: 0
+    
+
+

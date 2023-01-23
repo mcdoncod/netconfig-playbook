@@ -1,0 +1,9 @@
+#Sends CNI configuration file to target server. 
+---
+- name: Sending CNI configuration file to server.
+  copy:
+    src: /home/ansible/playbooks/send-cni/roles/send-files/files/ifcfg-enp0s3
+    dest: /etc/sysconfig/network-scripts/ifcfg-enp0s3
+    force: yes
+
+

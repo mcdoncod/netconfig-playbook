@@ -1,0 +1,10 @@
+---
+- hosts: all
+  become: true
+  tasks:
+    - import_role:
+        name: send-files 
+    
+    - import_role:
+        name: restart-network
+
